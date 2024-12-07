@@ -7,7 +7,7 @@ public class StaticDemo {
     public static void main(String[] args) {
         id = 10;
         StaticDemo staticDemo = new StaticDemo();
-        printDetails(); // This is the `static` method, invoke directly from static, no need to use object i.e. staticDemo
+        printDetails(); // This is the `static` method, invoke directly, no need to use object i.e. staticDemo
         staticDemo.displayDetails(); // This is the `non-static` method, to invoke it need to use object i.e. staticDemo
     }
 
