@@ -1,4 +1,4 @@
-package com.lt.practice.accessSpecifiers;
+package com.lt.practice.accessSpecifiers.staticDemo;
 
 public class StaticDemo {
     static int id;
