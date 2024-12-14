@@ -1,4 +1,4 @@
-package com.lt.practice.accessSpecifiers.staticDemo;
+package com.lt.practice.staticDemo;
 
 import java.util.Scanner;
 
