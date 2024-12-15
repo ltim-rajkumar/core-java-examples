@@ -22,6 +22,7 @@
 3. productDesc
 4. price
 5. discount
+6. finalPrice
 
 ### Create order
 1. id

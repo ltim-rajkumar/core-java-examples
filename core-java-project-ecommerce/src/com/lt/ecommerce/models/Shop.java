@@ -2,6 +2,7 @@ package com.lt.ecommerce.models;
 
 public class Shop {
     private int id;
+    private int ownerId; // User.id
     private String name;
     private String licenceNo;
     private int contactNo;
@@ -11,6 +12,7 @@ public class Shop {
     public String toString() {
         return "Shop{" +
                 "id=" + id +
+                ", ownerId='" + ownerId + '\'' +
                 ", name='" + name + '\'' +
                 ", licenceNo='" + licenceNo + '\'' +
                 ", contactNo=" + contactNo +
@@ -24,6 +26,14 @@ public class Shop {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
     }
 
     public String getName() {

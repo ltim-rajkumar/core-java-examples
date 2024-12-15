@@ -1,5 +1,5 @@
-import com.lt.ecommerce.services.UserService;
-import com.lt.ecommerce.utils.Utils;
+import com.lt.ecommerce.services.User;
+import com.lt.ecommerce.utils.UserInput;
 
 import java.util.Scanner;
 
@@ -14,23 +14,26 @@ public class Main {
             System.out.println("2 Create seller");
             System.out.println("3 Create delivery agent");
             System.out.println("4 Create shop");
-            System.out.println("5 Create order");
+            System.out.println("5 Create product");
+            System.out.println("6 Create order");
             System.out.println("9 Exit");
             option = Integer.parseInt(scanner.nextLine());
-            UserService user = new UserService(Utils.UserInput.CUSTOMER.value);
-            UserService seller = new UserService(Utils.UserInput.SELLER.value);
-            UserService deliveryAgent = new UserService(Utils.UserInput.DELIVERY_AGENT.value);
+            User user = new User();
+            User seller = new User();
+            User deliveryAgent = new User();
 
             switch (option) {
                 case 1: {
-                    user.createUser();
+                    user.createUser(UserInput.CUSTOMER.value);
                     break;
                 }
                 case 2: {
-                    seller.createUser();
+                    seller.createUser(UserInput.SELLER.value);
+                    break;
                 }
                 case 3: {
-                    deliveryAgent.createUser();
+                    deliveryAgent.createUser(UserInput.DELIVERY_AGENT.value);
+                    break;
                 }
             }
 
