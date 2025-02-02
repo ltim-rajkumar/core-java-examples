@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/core-java-array-.iml" filepath="$PROJECT_DIR$/core-java-array-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jfc-java-fundamental-classes.iml" filepath="$PROJECT_DIR$/jfc-java-fundamental-classes.iml" />
     </modules>
   </component>
 </project>
