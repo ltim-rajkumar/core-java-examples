@@ -83,7 +83,7 @@ public class SerializationDeserializationFilesDemo {
             System.out.println("------------------------");
 
         } catch (IOException | ClassNotFoundException ioex) {
-
+            System.out.println("IOException occurred while deserialization: " + ioex.getMessage());
         }
 
         return studentList;
