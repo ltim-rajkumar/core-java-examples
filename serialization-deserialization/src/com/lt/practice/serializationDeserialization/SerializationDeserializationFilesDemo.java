@@ -35,7 +35,6 @@ public class SerializationDeserializationFilesDemo {
             System.out.println("IOException occurred: " + ioex.getMessage());
         }
 
-
     }
 
     private void serialize(List<Student> studentList) throws IOException {
@@ -59,9 +58,9 @@ public class SerializationDeserializationFilesDemo {
             file.close();
 
             System.out.println("Serialization process completed....");
-            } catch (IOException ioex) {
-                System.out.println("Exception occurred while serialization: " + ioex.getMessage());
-            }
+        } catch (IOException ioex) {
+            System.out.println("Exception occurred while serialization: " + ioex.getMessage());
+        }
 
     }
 
